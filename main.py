@@ -2,23 +2,15 @@ from turtle import Turtle, Screen
 
 rammus = Turtle()
 
-rammus.shape("turtle")
-rammus.color("purple")
 
-for _ in range(4):
-    rammus.penup()
-    rammus.forward(15)
-    rammus.pendown()
-    rammus.forward(15)
+def drawShape(numSides):
+    angle = 360/numSides
+    for _ in range(numSides):
+        rammus.forward(100)
+        rammus.right(angle)
 
-# rammus.forward(100)
-# rammus.right(90)
-# rammus.forward(100)
-# rammus.right(90)
-# rammus.forward(100)
-# rammus.right(90)
-# rammus.forward(100)
-# rammus.right(90)
+for shapeSideN in range(3, 11):
+    drawShape(shapeSideN)
 
 screen = Screen()
 screen.exitonclick()
