@@ -4,15 +4,19 @@ rammus = Turtle()
 
 rammus.shape("turtle")
 rammus.color("purple")
-rammus.forward(100)
-rammus.right(90)
-rammus.forward(100)
-rammus.right(90)
-rammus.forward(100)
-rammus.right(90)
-rammus.forward(100)
-rammus.right(90+45)
-rammus.forward(146)
+
+for _ in range(4):
+    rammus.forward(100)
+    rammus.right(90)
+
+# rammus.forward(100)
+# rammus.right(90)
+# rammus.forward(100)
+# rammus.right(90)
+# rammus.forward(100)
+# rammus.right(90)
+# rammus.forward(100)
+# rammus.right(90)
 
 screen = Screen()
 screen.exitonclick()
